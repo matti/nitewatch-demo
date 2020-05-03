@@ -1,4 +1,4 @@
-module reflux-demo
+module nitewatch-demo-gin-gonic
 
 go 1.13
 

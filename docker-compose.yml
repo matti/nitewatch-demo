@@ -1,9 +1,19 @@
 version: "3.7"
 
 services:
-  app:
+  gin-gonic:
     build: .
     volumes:
-      - ./app:/app
+      - ./gin-gonic:/app
     ports:
       - 8080:8080
+
+  exiter-0:
+    build: .
+    volumes:
+      - ./exiter-0:/app
+
+  exiter-1:
+    build: .
+    volumes:
+      - ./exiter-1:/app
