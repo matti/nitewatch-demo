@@ -7,13 +7,38 @@ services:
       - ./gin-gonic:/app
     ports:
       - 8080:8080
+    command:
+      - --debug
+      - go
+      - run
+      - main.go
 
   exiter-0:
     build: .
     volumes:
       - ./exiter-0:/app
+    command:
+      - --debug
+      - go
+      - run
+      - main.go
 
   exiter-1:
     build: .
     volumes:
       - ./exiter-1:/app
+    command:
+      - --debug
+      - go
+      - run
+      - main.go
+
+  loop:
+    build: .
+    volumes:
+      - ./loop:/app
+    command:
+      - --debug
+      - go
+      - run
+      - main.go
